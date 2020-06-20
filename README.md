@@ -16,3 +16,6 @@ interpret() arguments:
 - memsize: The number of cells you can use in the program, formatted as an integer. Don't go too big obviously.
 - inputText: The  input that will be fed into the program, fomratted as a string. Each input ( , ) instruction will take one character starting from the left of the string.
 
+
+
+Each cell can hold 1 byte from 0-255 (will output ascii)

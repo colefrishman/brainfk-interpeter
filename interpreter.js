@@ -27,9 +27,15 @@ function interpret(sourceCode, memsize, inputText){
 				break;
 			case '-':
 				--memory[ptr];
+				if(memory[ptr] == -1){
+					memory[ptr] = 255
+				}
 				break;
 			case '+':
 				++memory[ptr];
+				if(memory[ptr] == 256){
+					memory[ptr] = 0
+				}
 				break;
 			case ',':
 				if(input){
