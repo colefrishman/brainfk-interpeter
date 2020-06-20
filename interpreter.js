@@ -1,4 +1,7 @@
 function interpret(sourceCode, memsize, inputText){
+	
+	
+	/* Intitialization stuff*/
 	let input = inputText;
 	const sclength = sourceCode.length;
 	let output = "";
@@ -7,7 +10,7 @@ function interpret(sourceCode, memsize, inputText){
 	let bracketStack = [];
 	let ptr = 0;
 
-
+	//Sets the memory to all 0s. There might be a more efficient way to do this.
 	for(let i=0; i<memsize; ++i){
 		memory.push(0);
 	}
@@ -31,6 +34,8 @@ function interpret(sourceCode, memsize, inputText){
 			case ',':
 				if(input){
 					memory[ptr] = input.charCodeAt(0);
+					
+					//removes the earliest input character after it used
 					input = input.slice(1);
 				}
 				else{
@@ -55,6 +60,7 @@ function interpret(sourceCode, memsize, inputText){
 				break;
 		}
 
+		// < and > loops around
 		if(ptr === -1){
 			ptr = memsize-1;
 		}

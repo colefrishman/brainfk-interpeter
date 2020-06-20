@@ -1,0 +1,26 @@
+{
+  "name": "brainfk-interpreter",
+  "version": "1.0.0",
+  "description": "Interprets brainfk code",
+  "main": "interpreter.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colefrishman/brainfk-interpreter"
+  },
+  "keywords": [
+    "brainfk",
+    "brainfuck",
+    "interpreter",
+    "compiler",
+    "brainf**k"
+  ],
+  "author": "colefrishman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colefrishman/brainfk-interpreter/issues"
+  },
+  "homepage": "https://github.com/colefrishman/brainfk-interpreter#readme"
+}
